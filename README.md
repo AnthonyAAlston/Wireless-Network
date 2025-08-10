@@ -45,7 +45,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 ### 3) Basic Wireless Settings
 - **Wireless → Basic Wireless Settings**
   - **Network Mode:** Wireless-N Only
-  - **SSID:** `WRT_LAN`
+  - **SSID: WRT_LAN**
   - **SSID Broadcast:** **Disabled**
 - Save.
 
@@ -55,7 +55,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 - **Wireless → Wireless Security**
   - **Security Mode:** WPA2-Personal
   - **Encryption:** AES
-  - **Passphrase:** `password123`
+  - **Passphrase: password123**
 - Save.
 
 ![Wireless Security](s4.png)
@@ -82,7 +82,7 @@ Because SSID broadcast is disabled, create a manual profile.
 
 3) **Creating a Profile**
    - **Wireless Mode:** Infrastructure  
-   - **Wireless Network Name (SSID):** `WRT_LAN`  
+   - **Wireless Network Name (SSID): WRT_LAN**  
    - Next.
 
     ![Enter SSID (Infrastructure Mode)](s6.png)
