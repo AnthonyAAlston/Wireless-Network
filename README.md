@@ -84,14 +84,14 @@ Since SSID broadcast is disabled, we must manually create a connection profile.
 1) PC2 → Desktop → PC Wireless  
    On Available Wireless Networks, click Advanced Setup.
 
-   ![Available Networks / Advanced Setup](s5.png)
+  ![Available Networks / Advanced Setup](s5.png)
 
 3) Creating a Profile
    - Wireless Mode: Infrastructure  
    - Wireless Network Name (SSID): WRT_LAN  
    - Next.
 
-    ![Enter SSID (Infrastructure Mode)](s6.png)
+  ![Enter SSID (Infrastructure Mode)](s6.png)
 
 4) Security
    - WPA2-Personal → Next  
@@ -107,7 +107,7 @@ Since SSID broadcast is disabled, we must manually create a connection profile.
 6) Connected Status
    - Verify Signal Strength and Link Quality are green.
 
-![Connected / Link Quality](s9.png)
+  ![Connected / Link Quality](s9.png)
 
 ---
 
