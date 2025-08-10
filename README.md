@@ -1,18 +1,18 @@
-# 🛜 Network+ Learning Activity #19 — Secure Wireless LAN (Cisco Packet Tracer)
+## Network+ Learning Activity #19 — Secure Wireless LAN (Cisco Packet Tracer)
 
-## 📄 Lab Description
+## Lab Description
 This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet Tracer using a Linksys WRT300N wireless router. The setup involves connecting the router to an existing wired network, assigning WAN and LAN IP addresses, enabling DHCP for wireless clients, securing the wireless network using WPA2-Personal with AES encryption, hiding the SSID, manually connecting a wireless client, and verifying connectivity between wired and wireless devices.
 
 ---
 
-## 🧭 Topology & Addressing
+## Topology & Addressing
 
 ### Topology
 ![Topology](s1.png)
 
 --
 
-## 🎯 Objectives
+## Objectives
 - Configure WAN and LAN on the wireless router  
 - Enable DHCP for the WLAN  
 - Set up Wi-Fi: SSID **WRT_LAN**, **SSID Broadcast: Disabled**, **WPA2-Personal (AES)**  
@@ -62,7 +62,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 
 ---
 
-## 🖥️ Part 2 — PC1 (Wired Host)
+## Part 2 — PC1 (Wired Host)
 
 - **PC1 → Desktop → IP Configuration**
   - IP **152.10.10.20**
@@ -71,7 +71,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 
 ---
 
-## 📶 Part 3 — PC2 (Wireless Client, Hidden SSID)
+## Part 3 — PC2 (Wireless Client, Hidden SSID)
 
 Because SSID broadcast is disabled, create a manual profile.
 
