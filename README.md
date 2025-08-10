@@ -108,6 +108,6 @@ Before testing, ensure the wireless network topology is complete and devices are
 
 ### 2) Ping Test
 On **PC2**, open **Command Prompt** and ping **PC1**:
-
+(s10.png)
 ```bash
 ping 152.10.10.20
