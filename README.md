@@ -10,16 +10,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 ### Topology
 ![Topology](s1.png)
 
-### Addressing Table
-| Device               | Interface | IP Address     | Subnet Mask     | Default Gateway |
-|---------------------|----------:|----------------|-----------------|-----------------|
-| **Router1**         | G0/0      | 152.10.10.10   | 255.255.255.0   | —               |
-| **PC1 (wired)**     | NIC       | 152.10.10.20   | 255.255.255.0   | 152.10.10.10    |
-| **Wireless Router** | WAN       | 152.10.10.30   | 255.255.255.0   | 152.10.10.10    |
-| **Wireless Router** | LAN       | 172.17.20.1    | 255.255.255.0   | —               |
-| **PC2 (wireless)**  | Wi-Fi     | DHCP assigned  | 255.255.255.0   | 172.17.20.1     |
-
----
+--
 
 ## 🎯 Objectives
 - Configure WAN and LAN on the wireless router  
