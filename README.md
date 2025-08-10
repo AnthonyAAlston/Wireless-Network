@@ -1,130 +1,85 @@
-# 🛜 Network+ Learning Activity #19 — Configuring a Secure Wireless LAN (Cisco Packet Tracer)
+# ​ Network+ Lab 19 — Secure Wireless LAN Setup (Cisco Packet Tracer)
 
-This lab demonstrates how to set up and secure a wireless LAN using a Linksys WRT300N wireless router in Cisco Packet Tracer. The configuration includes setting up WAN and LAN addressing, enabling DHCP, securing Wi-Fi with WPA2-Personal, disabling SSID broadcast, and connecting a wireless client manually.
+Set up a secure wireless LAN using a Linksys WRT300N router connected to Router1. You'll configure WAN/LAN IPs, enable DHCP, hide the SSID, secure Wi-Fi, connect a wireless client, and verify connectivity.
 
 ---
 
-## 📡 Topology & Addressing
+##  Topology & Addressing
 
-### Topology
+### Topology Diagram
 ![Topology](s6.png)
 
-### Addressing Table
-| Device           | Interface | IP Address     | Subnet Mask     | Default Gateway |
-|------------------|-----------|----------------|-----------------|-----------------|
-| **Router1**      | G0/0      | 152.10.10.10   | 255.255.255.0   | N/A             |
-| **PC1**          | NIC       | 152.10.10.20   | 255.255.255.0   | 152.10.10.10    |
-| **PC2**          | NIC       | DHCP assigned  | 255.255.255.0   | 172.17.20.1     |
-| **Wireless Rtr1**| Internet  | 152.10.10.30   | 255.255.255.0   | 152.10.10.10    |
+| Device             | Interface | IP Address     | Subnet Mask     | Default Gateway |
+|--------------------|-----------|----------------|-----------------|-----------------|
+| **Router1**        | G0/0      | 152.10.10.10   | 255.255.255.0   | N/A             |
+| **PC1 (Wired)**    | NIC       | 152.10.10.20   | 255.255.255.0   | 152.10.10.10    |
+| **Wireless Router**| WAN       | 152.10.10.30   | 255.255.255.0   | 152.10.10.10    |
+| **Wireless Router**| LAN       | 172.17.20.1    | 255.255.255.0   | N/A             |
+| **PC2 (Wireless)** | NIC       | DHCP-assigned  | 255.255.255.0   | 172.17.20.1     |
 
 ---
 
-## 🎯 Objectives
-- Configure a wireless router for LAN/WAN access
-- Enable DHCP for wireless clients
-- Secure the wireless network with WPA2-Personal
-- Disable SSID broadcast and manually connect a wireless client
-- Verify connectivity from inside the WLAN
+##  Objectives
+
+1. Configure WAN and LAN settings on the wireless router  
+2. Enable DHCP for wireless clients  
+3. Set up wireless security (WPA2, hidden SSID)  
+4. Connect a wireless client manually  
+5. Verify internal LAN to LAN connectivity
 
 ---
 
-## 🛠️ Part 1 — Configure Wireless Router
+##  Step-by-Step Configuration
 
-### Step 1 — Internet (WAN) Settings
-**What to do:**  
-1. Open **Wireless Router1 → GUI → Setup**.  
-2. Set **Internet Connection Type** to `Static IP`.  
-3. Configure:
-   - IP Address: `152.10.10.30`
-   - Subnet Mask: `255.255.255.0`
-   - Default Gateway: `152.10.10.10`
-4. Leave DNS values at default or `0.0.0.0`.  
-5. Save settings.  
-![WAN Config](s7.png)
+### 1. WAN (Internet) Configuration on Wireless Router
+- Navigate to **GUI → Setup**  
+- Choose **Static IP**, then set:
+  - IP: `152.10.10.30`
+  - Mask: `255.255.255.0`
+  - Gateway: `152.10.10.10`  
+- Save  
+![WAN Setup](s7.png)
 
-**Why:**  
-The wireless router’s Internet (WAN) port needs a static IP to communicate with the main Router1. Without this, devices inside the WLAN can’t reach other networks.
+### 2. LAN & DHCP Setup
+- Go to **Network Setup**
+  - Set router IP: `172.17.20.1`
+  - Subnet mask: `255.255.255.0`
+  - Enable DHCP: Range `172.17.20.100–149` (max 50 users)  
+- Save  
 
----
-
-### Step 2 — LAN Settings & DHCP
-**What to do:**  
-1. Under **Network Setup**, set:
-   - IP Address: `172.17.20.1`
-   - Subnet Mask: `255.255.255.0`
-2. **Enable DHCP Server** with range:
-   - Start IP: `172.17.20.100`
-   - Max Users: `50`
-3. Save settings.
-
-**Why:**  
-This IP is the *default gateway* for all wireless clients. DHCP auto-assigns addresses to clients, preventing manual IP mistakes.
-
----
-
-### Step 3 — Wireless Basic Settings
-**What to do:**  
-1. Go to **Wireless → Basic Wireless Settings**.  
-2. Configure:
-   - Network Mode: `Wireless-N Only`
-   - SSID: `WRT_LAN`
-   - SSID Broadcast: **Disabled**
-3. Save settings.  
+### 3. Wireless Basic Settings
+- Access **Wireless → Basic Wireless Settings**
+  - Mode: `Wireless-N Only`
+  - SSID: `WRT_LAN`
+  - Disable SSID Broadcast  
+- Save  
 ![Wireless Basic](s8.png)
 
-**Why:**  
-*Wireless-N Only* gives better throughput on compatible devices. Disabling SSID broadcast hides the network from casual scans (clients must be configured manually).
-
----
-
-### Step 4 — Wireless Security
-**What to do:**  
-1. Go to **Wireless → Wireless Security**.  
-2. Set:
-   - Security Mode: `WPA2-Personal`
-   - Encryption: `AES`
-   - Passphrase: `password123`
-3. Save settings.  
+### 4. Wireless Security
+- Under **Wireless → Wireless Security**
+  - Security: `WPA2-Personal`
+  - Encryption: `AES`
+  - Passphrase: `password123`  
+- Save  
 ![Wireless Security](s9.png)
 
-**Why:**  
-WPA2-Personal with AES is the recommended secure option for small networks.
+### 5. PC1 (Wired) Configuration
+- On PC1: go to **Desktop → IP Configuration**
+  - IP: `152.10.10.20`
+  - Mask: `255.255.255.0`
+  - Gateway: `152.10.10.10`
 
----
-
-## 🖥️ Part 2 — Configure PC1 (Wired Host)
-**What to do:**  
-1. Open `PC1 → Desktop → IP Configuration`.  
-2. Set:
-   - IP Address: `152.10.10.20`
-   - Subnet Mask: `255.255.255.0`
-   - Default Gateway: `152.10.10.10`
-
-**Why:**  
-Static IP on the 152.10.10.0/24 network allows testing reachability from the WLAN.
-
----
-
-## 📶 Part 3 — Configure PC2 (Wireless Client with Hidden SSID)
-**What to do:**  
-1. Open `PC2 → Desktop → PC Wireless → Advanced Setup`.
-2. Set **Wireless Mode** to `Infrastructure` and enter **SSID**: `WRT_LAN`.  
-![SSID Entry](s1.png)
-3. Choose **WPA2-Personal**.  
-![Security Type](s2.png)
-4. Enter `password123`.  
-5. Save the profile and connect.  
-![Profile Confirmation](s3.png)
-6. Verify **Signal Strength** and **Link Quality**.  
+### 6. PC2 (Wireless) Configuration—Hidden SSID
+- On PC2: **Desktop → PC Wireless → Advanced Setup**
+  - Mode: `Infrastructure`
+  - SSID: `WRT_LAN`
+  - Security: `WPA2-Personal`, Passphrase: `password123`  
+- Save profile, connect  
+![Connecting](s3.png)
+- Check signal/link quality  
 ![Connected](s4.png)
 
-**Why:**  
-Hidden SSID requires manual entry. *Infrastructure* mode ensures the client connects through the router, not peer-to-peer.
-
----
-
-## 🔍 Part 4 — Verify Connectivity
-**What to do:**  
-From **PC2**:
-```bash
-ping 152.10.10.20
+### 7. Connectivity Verification
+- On PC2, open terminal and ping PC1:
+  ```bash
+  ping 152.10.10.20
