@@ -1,6 +1,7 @@
 # 🛜 Network+ Learning Activity #19 — Secure Wireless LAN (Cisco Packet Tracer)
 
-Set up a small secure WLAN using a Linksys WRT300N. You’ll configure WAN/LAN addressing, enable DHCP, secure Wi-Fi with WPA2-Personal, hide the SSID, connect a wireless client manually, and verify connectivity.
+## 📄 Lab Description
+This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet Tracer using a Linksys WRT300N wireless router. The setup involves connecting the router to an existing wired network, assigning WAN and LAN IP addresses, enabling DHCP for wireless clients, securing the wireless network using WPA2-Personal with AES encryption, hiding the SSID, manually connecting a wireless client, and verifying connectivity between wired and wireless devices.
 
 ---
 
@@ -49,8 +50,6 @@ Set up a small secure WLAN using a Linksys WRT300N. You’ll configure WAN/LAN a
     - Start IP `172.17.20.100`  
     - Max Users `50`
 - Save.
-
-*(Values match the lab spec.)*
 
 ### 3) Basic Wireless Settings
 - **Wireless → Basic Wireless Settings**
@@ -112,7 +111,12 @@ Because SSID broadcast is disabled, create a manual profile.
 
 ## 🔍 Part 4 — Verify Connectivity (Inside → Outside)
 
-On **PC2** open **Command Prompt** and ping **PC1**:
+### 1) Wireless Network Overview
+Before testing, ensure the wireless network topology is complete and devices are linked.  
+![Wireless Network Topology](s11.png)
+
+### 2) Ping Test
+On **PC2**, open **Command Prompt** and ping **PC1**:
 
 ```bash
 ping 152.10.10.20
