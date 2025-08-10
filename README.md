@@ -108,6 +108,7 @@ Before testing, ensure the wireless network topology is complete and devices are
 
 ### 2) Ping Test
 To verifiy connectivity, we will ping **PC2** from **PC1**
+
 ![](s10.png)
 
 
