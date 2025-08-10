@@ -77,24 +77,28 @@ Because SSID broadcast is disabled, create a manual profile.
 
 1) **PC2 → Desktop → PC Wireless**  
    On **Available Wireless Networks**, click **Advanced Setup**.
+
    ![Available Networks / Advanced Setup](s5.png)
 
-2) **Creating a Profile**
+3) **Creating a Profile**
    - **Wireless Mode:** Infrastructure  
    - **Wireless Network Name (SSID):** `WRT_LAN`  
    - Next.
-   ![Enter SSID (Infrastructure Mode)](s6.png)
 
-3) **Security**
+    ![Enter SSID (Infrastructure Mode)](s6.png)
+
+4) **Security**
    - **WPA2-Personal** → Next  
    - Passphrase: **password123** → Next
+   
    ![Choose WPA2-Personal](s7.png)
 
-4) **Confirm & Save**
+5) **Confirm & Save**
    - Review profile → **Save** → **Connect to Network**
-   ![Confirm New Settings](s8.png)
 
-5) **Connected Status**
+  ![Confirm New Settings](s8.png)
+
+6) **Connected Status**
    - Verify **Signal Strength** and **Link Quality** are green.
    ![Connected / Link Quality](s9.png)
 
