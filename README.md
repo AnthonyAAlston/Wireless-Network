@@ -24,6 +24,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 ## Part 1 — Wireless Router Configuration
 
 ### 1) WAN (Internet) Settings
+The WAN (Internet) port of the wireless router must be on the same network as the main router so it can send and receive traffic outside the WLAN.
 - **GUI → Setup**
 - **Internet Connection Type:** Static IP  
   - IP **152.10.10.30** 
@@ -34,6 +35,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 ![WAN Setup](s2.png)
 
 ### 2) LAN & DHCP
+The LAN IP defines the network that wireless clients will join. DHCP automatically assigns IP addresses so users don’t have to configure them manually.
 - **Network Setup**
   - **Router IP:** **172.17.20.1**
   - **Subnet Mask:** **255.255.255.0**
@@ -43,6 +45,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 - Save.
 
 ### 3) Basic Wireless Settings
+Here, we set the wireless mode, network name, and disable broadcasting so the network isn’t visible to casual scans.
 - **Wireless → Basic Wireless Settings**
   - **Network Mode:** Wireless-N Only
   - **SSID: WRT_LAN**
@@ -52,6 +55,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 ![Basic Wireless Settings](s3.png)
 
 ### 4) Wireless Security
+To prevent unauthorized access, we configure WPA2-Personal with AES encryption and a passphrase.
 - **Wireless → Wireless Security**
   - **Security Mode:** WPA2-Personal
   - **Encryption:** AES
@@ -63,11 +67,13 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 ---
 
 ## Part 2 — PC1 (Wired Host)
-
+Confirm the addressing on PC1
 - **PC1 → Desktop → IP Configuration**
   - IP **152.10.10.20**
   - Mask **255.255.255.0**
   - Gateway `**152.10.10.10**
+
+ This should be exactly the same as the given table at the top
 
 ---
 
