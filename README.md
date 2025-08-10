@@ -79,7 +79,7 @@ Confirm the addressing on PC1
 
 ## Part 3 — PC2 (Wireless Client, Hidden SSID)
 
-Because SSID broadcast is disabled, create a manual profile.
+Since SSID broadcast is disabled, we must manually create a connection profile.
 
 1) **PC2 → Desktop → PC Wireless**  
    On **Available Wireless Networks**, click **Advanced Setup**.
@@ -113,7 +113,7 @@ Because SSID broadcast is disabled, create a manual profile.
 ## 🔍 Part 4 — Verify Connectivity (Inside → Outside)
 
 ### 1) Wireless Network Overview
-Before testing, ensure the wireless network topology is complete and devices are linked.  
+After connecting to the wireless signal, you should see a connection from PC2 to the Router  
 ![Wireless Network Topology](s11.png)
 
 ### 2) Ping Test
