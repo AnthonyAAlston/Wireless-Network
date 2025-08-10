@@ -106,6 +106,7 @@ Since SSID broadcast is disabled, we must manually create a connection profile.
 
 6) Connected Status
    - Verify Signal Strength and Link Quality are green.
+
 ![Connected / Link Quality](s9.png)
 
 ---
