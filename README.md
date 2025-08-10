@@ -10,7 +10,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 ### Topology
 ![Topology](s1.png)
 
---
+---
 
 ## Objectives
 - Configure WAN and LAN on the wireless router  
