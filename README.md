@@ -1,4 +1,4 @@
-## Network+ Learning Activity #19 — Secure Wireless LAN (Cisco Packet Tracer)
+## Installing and Configuring Wireless LAN Access and Security
 
 ## Lab Description
 This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet Tracer using a Linksys WRT300N wireless router. The setup involves connecting the router to an existing wired network, assigning WAN and LAN IP addresses, enabling DHCP for wireless clients, securing the wireless network using WPA2-Personal with AES encryption, hiding the SSID, manually connecting a wireless client, and verifying connectivity between wired and wireless devices.
