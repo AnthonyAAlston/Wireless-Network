@@ -26,20 +26,20 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 ### 1) WAN (Internet) Settings
 - **GUI → Setup**
 - **Internet Connection Type:** Static IP  
-  - IP `152.10.10.30`  
-  - Mask `255.255.255.0`  
-  - Default Gateway `152.10.10.10`
+  - IP **152.10.10.30** 
+  - Mask **255.255.255.0**
+  - Default Gateway **152.10.10.10**
 - Save.
   
 ![WAN Setup](s2.png)
 
 ### 2) LAN & DHCP
 - **Network Setup**
-  - **Router IP:** `172.17.20.1`
-  - **Subnet Mask:** `255.255.255.0`
+  - **Router IP:** **172.17.20.1**
+  - **Subnet Mask:** **255.255.255.0**
   - **DHCP Server:** Enabled  
-    - Start IP `172.17.20.100`  
-    - Max Users `50`
+    - Start IP **172.17.20.100**  
+    - Max Users **50**
 - Save.
 
 ### 3) Basic Wireless Settings
