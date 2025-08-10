@@ -125,3 +125,10 @@ To verify connectivity, we will ping PC2 from PC1
 
 ## Summary
 This lab configured a secure wireless LAN in Cisco Packet Tracer by setting up WAN and LAN IPs, enabling DHCP, applying WPA2-Personal security, and disabling SSID broadcast. A wired PC and a manually configured wireless client were connected, and successful pings confirmed proper setup and connectivity.
+
+
+## Author
+
+**Anthony Alston**  
+- [LinkedIn](https://www.linkedin.com/in/anthony-alston-6a2b29273)  
+- GitHub: [AnthonyAAlston](https://github.com/AnthonyAAlston)
