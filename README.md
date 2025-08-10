@@ -130,5 +130,5 @@ This lab configured a secure wireless LAN in Cisco Packet Tracer by setting up W
 ## Author
 
 **Anthony Alston**  
-- [LinkedIn](https://www.linkedin.com/in/anthony-alston-6a2b29273)  
+- [LinkedIn](linkedin.com/in/anthonyaalston/)   
 - GitHub: [AnthonyAAlston](https://github.com/AnthonyAAlston)
