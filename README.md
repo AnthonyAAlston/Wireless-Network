@@ -65,9 +65,9 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 ## 🖥️ Part 2 — PC1 (Wired Host)
 
 - **PC1 → Desktop → IP Configuration**
-  - IP `152.10.10.20`
-  - Mask `255.255.255.0`
-  - Gateway `152.10.10.10`
+  - IP **152.10.10.20**
+  - Mask **255.255.255.0**
+  - Gateway `**152.10.10.10**
 
 ---
 
@@ -87,7 +87,7 @@ Because SSID broadcast is disabled, create a manual profile.
 
 3) **Security**
    - **WPA2-Personal** → Next  
-   - Passphrase: `password123` → Next
+   - Passphrase: **password123** → Next
    ![Choose WPA2-Personal](s7.png)
 
 4) **Confirm & Save**
@@ -107,7 +107,14 @@ Before testing, ensure the wireless network topology is complete and devices are
 ![Wireless Network Topology](s11.png)
 
 ### 2) Ping Test
-On **PC2**, open **Command Prompt** and ping **PC1**:
-
+To verifiy connectivity, we will ping **PC2** from **PC1**
 ![](s10.png)
-```bash
+
+
+## Summary
+This lab configured a secure wireless LAN in Cisco Packet Tracer by setting up WAN and LAN IPs, enabling DHCP, applying WPA2-Personal security, and disabling SSID broadcast. A wired PC and a manually configured wireless client were connected, and successful pings confirmed proper setup and connectivity.
+
+
+
+
+
