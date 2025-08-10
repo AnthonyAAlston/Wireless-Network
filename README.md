@@ -21,7 +21,7 @@ This lab demonstrates how to configure and secure a wireless LAN in Cisco Packet
 
 ---
 
-## 🛠️ Part 1 — Wireless Router Configuration
+## Part 1 — Wireless Router Configuration
 
 ### 1) WAN (Internet) Settings
 - **GUI → Setup**
